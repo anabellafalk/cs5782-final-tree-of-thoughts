@@ -1,0 +1,20 @@
+Human pairwise eval (rater 1, 20 pairs, tot vs cot), from merged_ratings.csv + aggregate logic.
+
+Sentence (paper-style):
+  Humans prefer ToT over CoT in 14 out of 20 passage pairs, while only prefer CoT over ToT in 1, and 5 similarly coherent.
+
+Bar chart (Fig. 5(b)-style):
+  results/creative-writing/human_eval/interactive/human_coherency_comparison_bars.png
+
+Regenerate chart after new votes:
+  python3 code/tot/tasks/creative-writing/human_pairwise_interactive.py merge \
+    --key results/creative-writing/human_eval/interactive/pairs_key.json \
+    --rater-exports results/creative-writing/human_eval/interactive/rater_1_votes.json \
+    --out-csv results/creative-writing/human_eval/interactive/merged_ratings.csv
+  python3 code/tot/tasks/creative-writing/human_pairwise_eval.py aggregate \
+    --ratings results/creative-writing/human_eval/interactive/merged_ratings.csv \
+    --key results/creative-writing/human_eval/interactive/pairs_key.json
+  python3 code/tot/tasks/creative-writing/plot_human_coherency_comparison.py \
+    --key results/creative-writing/human_eval/interactive/pairs_key.json \
+    --ratings results/creative-writing/human_eval/interactive/merged_ratings.csv \
+    --out results/creative-writing/human_eval/interactive/human_coherency_comparison_bars.png

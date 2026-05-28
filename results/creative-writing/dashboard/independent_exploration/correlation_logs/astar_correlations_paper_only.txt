@@ -1,0 +1,13 @@
+Matched rows: 50
+delta_vote_entropy_plan: r=0.187, p=0.193, n=50
+delta_vote_entropy_passage: r=0.012, p=0.935, n=50
+delta_score_std: r=0.795, p=5.25e-12, n=50
+
+Extra diagnostics:
+mean score_delta (tot_astar - tot): 0.0240
+median score_delta: 0.0000
+win rate (score_delta > 0): 18.00%
+tie rate (score_delta = 0): 70.00%
+Wrote /Users/aileenh/TreeofThoughts/results/creative-writing/dashboard/analysis/astar/metric_delta_correlations/score_delta_vs_delta_vote_entropy_plan.png
+Wrote /Users/aileenh/TreeofThoughts/results/creative-writing/dashboard/analysis/astar/metric_delta_correlations/score_delta_vs_delta_vote_entropy_passage.png
+Wrote /Users/aileenh/TreeofThoughts/results/creative-writing/dashboard/analysis/astar/metric_delta_correlations/score_delta_vs_delta_score_std.png

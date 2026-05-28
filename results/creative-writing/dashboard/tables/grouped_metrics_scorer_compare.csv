@@ -1,0 +1,11 @@
+method,k,results_json,score_model_type,runs,mean_score,std_score,mean_cost_usd,total_cost_usd,mean_api_calls,mean_prompt_tokens,mean_completion_tokens
+cot,5,baseline.json,gpt-4o-mini,20,8.022,0.0762,0.007241,0.144821,11.0,4909.05,10841.15
+cot,5,scorer4.1.json,gpt-4.1-mini,20,8.25,0.8754,0.014437,0.288732,11.0,4980.55,11299.75
+io,5,baseline.json,gpt-4o-mini,20,7.99,0.2163,0.006099,0.121971,11.0,4606.3,9012.7
+io,5,scorer4.1.json,gpt-4.1-mini,20,8.18,0.911,0.012856,0.257113,11.0,4638.85,9243.5
+io_refine,5,baseline.json,gpt-4o-mini,20,8.1,0.1777,0.007279,0.145581,14.3,6193.45,10583.4
+io_refine,5,scorer4.1.json,gpt-4.1-mini,20,8.65,0.9512,0.015856,0.317114,14.7,6430.15,11117.45
+tot,5,baseline.json,gpt-4o-mini,20,8.02,0.0894,0.006613,0.132268,5.0,6463.2,9406.55
+tot,5,scorer4.1.json,gpt-4.1-mini,20,8.29,1.1814,0.007561,0.151228,5.0,6554.5,9726.95
+tot_refine,5,baseline.json,gpt-4o-mini,20,8.17,0.2697,0.007624,0.15249,7.5,7987.05,10710.7
+tot_refine,5,scorer4.1.json,gpt-4.1-mini,20,8.67,0.6752,0.009556,0.191129,7.7,8164.7,11010.6

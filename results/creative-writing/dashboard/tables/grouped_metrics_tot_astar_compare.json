@@ -1,0 +1,26 @@
+[
+  {
+    "method":"tot",
+    "k":5,
+    "runs":50,
+    "mean_score":8.056,
+    "std_score":0.1459,
+    "mean_cost_usd":0.00676,
+    "total_cost_usd":0.337986,
+    "mean_api_calls":5.0,
+    "mean_prompt_tokens":6499.6,
+    "mean_completion_tokens":9641.3
+  },
+  {
+    "method":"tot_astar",
+    "k":5,
+    "runs":50,
+    "mean_score":8.08,
+    "std_score":0.1807,
+    "mean_cost_usd":0.0,
+    "total_cost_usd":0.0,
+    "mean_api_calls":0.0,
+    "mean_prompt_tokens":0.0,
+    "mean_completion_tokens":0.0
+  }
+]

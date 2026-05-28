@@ -1,0 +1,4 @@
+method,k,runs,mean_score,std_score,mean_cost_usd,total_cost_usd,mean_api_calls,mean_prompt_tokens,mean_completion_tokens
+hybrid_tot,5,20,8.05,0.11,0.006695,0.133893,5.0,6396.15,9558.7
+tot,5,20,8.08,0.2093,0.006675,0.133509,5.0,6449.7,9513.35
+tot_astar,5,20,8.14,0.2162,0.008016,0.160318,6.0,9065.45,11093.5

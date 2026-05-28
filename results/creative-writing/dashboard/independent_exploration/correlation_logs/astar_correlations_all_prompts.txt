@@ -1,0 +1,12 @@
+Matched tasks: 20
+vote_entropy_plan_tot: r=-0.269, p=0.252, n=20
+vote_entropy_passage_tot: r=-0.077, p=0.747, n=20
+mean_score_tot: r=0.061, p=0.8, n=20
+score_std_tot: r=-0.092, p=0.7, n=20
+vote_parse_failures_plan_tot: skip (constant column or constant score_delta), n=20
+
+Extra diagnostics:
+mean score_delta (tot_astar - tot): -0.0100
+median score_delta: 0.0000
+win rate (score_delta > 0): 10.00%
+tie rate (score_delta = 0): 75.00%

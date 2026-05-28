@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative writing — pairwise passage judgment</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      --bg: #0f1419;
+      --card: #1a2332;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #3d8bfd;
+      --good: #3fb950;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      min-height: 100vh; line-height: 1.5;
+    }
+    header {
+      padding: 1rem 1.25rem; border-bottom: 1px solid var(--border);
+      background: var(--card); position: sticky; top: 0; z-index: 10;
+    }
+    h1 { margin: 0; font-size: 1.1rem; font-weight: 600; }
+    .sub { color: var(--muted); font-size: 0.85rem; margin-top: 0.35rem; }
+    main { max-width: 1200px; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
+      margin-bottom: 1rem;
+    }
+    label { color: var(--muted); font-size: 0.85rem; }
+    select, button, input[type="file"] {
+      background: var(--card); color: var(--text); border: 1px solid var(--border);
+      padding: 0.45rem 0.75rem; border-radius: 6px; font-size: 0.9rem;
+    }
+    button.primary {
+      background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+      cursor: pointer;
+    }
+    button.primary:hover { filter: brightness(1.08); }
+    button.secondary { cursor: pointer; }
+    button.good { background: var(--good); border-color: var(--good); color: #0d1117; font-weight: 600; cursor: pointer; }
+    .progress { color: var(--muted); font-size: 0.9rem; }
+    .bar {
+      height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-top: 0.35rem;
+    }
+    .bar > div { height: 100%; background: var(--accent); transition: width 0.2s; }
+    .pair-meta { margin-bottom: 1rem; color: var(--muted); font-size: 0.9rem; }
+    .panels {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    }
+    @media (max-width: 800px) { .panels { grid-template-columns: 1fr; } }
+    .panel {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1rem; min-height: 200px;
+    }
+    .panel h2 {
+      margin: 0 0 0.75rem; font-size: 0.95rem; color: var(--muted); font-weight: 600;
+    }
+    .passage {
+      white-space: pre-wrap; word-break: break-word; font-size: 0.95rem;
+      max-height: 55vh; overflow-y: auto;
+    }
+    .vote-row {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; align-items: center;
+    }
+    button.vote-btn {
+      min-width: 12rem; padding: 0.7rem 1.1rem; font-size: 1rem; font-weight: 600;
+      border-width: 2px; border-radius: 8px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+    }
+    button.vote-btn:hover:not(.selected) { transform: scale(1.02); }
+    /* Unselected: neutral so “selected” pops */
+    button#btnLeft:not(.selected) { background: #21262d; border-color: #444; color: #e6edf3; }
+    button#btnRight:not(.selected) { background: #21262d; border-color: #444; color: #e6edf3; }
+    button#btnLeft.selected {
+      background: linear-gradient(160deg, #238636, #2ea043); border-color: #56d364; color: #fff;
+      box-shadow: 0 0 0 4px rgba(63, 185, 80, 0.45); transform: scale(1.03);
+    }
+    button#btnRight.selected {
+      background: linear-gradient(160deg, #1f6feb, #388bfd); border-color: #79c0ff; color: #fff;
+      box-shadow: 0 0 0 4px rgba(56, 139, 253, 0.45); transform: scale(1.03);
+    }
+    button#btnSimilar:not(.selected) { background: #21262d; border-color: #444; color: #e6edf3; }
+    button#btnSimilar.selected {
+      background: linear-gradient(160deg, #6e7681, #8b949e); border-color: #c9d1d9; color: #fff;
+      box-shadow: 0 0 0 4px rgba(139, 148, 158, 0.35); transform: scale(1.03);
+    }
+    .panels.similar-picked .panel { opacity: 0.88; }
+    .panel.panel-chosen-a {
+      border-color: #3fb950;
+      box-shadow: inset 0 0 0 2px rgba(63, 185, 80, 0.35);
+    }
+    .panel.panel-chosen-b {
+      border-color: #388bfd;
+      box-shadow: inset 0 0 0 2px rgba(56, 139, 253, 0.35);
+    }
+    .hint { color: var(--muted); font-size: 0.8rem; }
+    .status { margin-top: 0.75rem; font-size: 0.85rem; }
+    .error { color: #f85149; }
+    footer {
+      margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pairwise passage judgment (human only)</h1>
+    <div class="sub">Do not discuss with other raters until everyone finishes. For each pair: choose <strong>A</strong> or <strong>B</strong> if one passage is clearly more coherent, or <strong>Similarly coherent</strong> if they are about the same (paper-style third option). Left/right assignment is randomized per pair.</div>
+  </header>
+  <main>
+    <div class="controls">
+      <label>Rater ID <select id="raterId"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label>
+      <button type="button" class="secondary" id="btnSave">Save reminder</button>
+      <button type="button" class="secondary" id="btnExport">Export my votes (JSON)</button>
+      <label>Import session <input type="file" id="importFile" accept="application/json" /></label>
+    </div>
+    <div class="progress">
+      <span id="progText"></span>
+      <div class="bar"><div id="progBar"></div></div>
+    </div>
+    <p class="pair-meta" id="pairMeta"></p>
+    <div class="panels" id="panelRow">
+      <div class="panel" id="leftPanel">
+        <h2>Passage A (left)</h2>
+        <div class="passage" id="leftText"></div>
+      </div>
+      <div class="panel" id="rightPanel">
+        <h2>Passage B (right)</h2>
+        <div class="passage" id="rightText"></div>
+      </div>
+    </div>
+    <div class="vote-row">
+      <button type="button" class="vote-btn" id="btnLeft" aria-pressed="false">A is better</button>
+      <button type="button" class="vote-btn" id="btnRight" aria-pressed="false">B is better</button>
+      <button type="button" class="vote-btn" id="btnSimilar" aria-pressed="false">Similarly coherent</button>
+      <button type="button" class="secondary" id="btnClear">Clear vote for this pair</button>
+      <span class="hint">Shortcuts: <kbd>1</kbd> A · <kbd>2</kbd> B · <kbd>3</kbd> similar</span>
+    </div>
+    <div class="vote-row">
+      <button type="button" class="secondary" id="btnPrev">← Previous</button>
+      <button type="button" class="primary" id="btnNext">Next →</button>
+      <button type="button" class="secondary" id="btnFirstMissing">Jump to first missing</button>
+    </div>
+    <p class="status" id="status"></p>
+    <footer>
+      Cohen’s κ interpretation (pairwise between raters): κ &gt; 0.6 substantial; 0.4–0.6 moderate; &lt; 0.4 poor.
+      After all raters export, run <code>human_pairwise_interactive.py merge</code> then <code>human_pairwise_eval.py aggregate</code>.
+    </footer>
+  </main>
+  <script src="pairs_embed.js"></script>
+  <script>
+(function() {
+  const STORAGE_PREFIX = "cw_pairwise_v2_rater_";
+  let idx = 0;
+
+  function storageKey() {
+    const r = document.getElementById("raterId").value;
+    return STORAGE_PREFIX + r;
+  }
+
+  function loadVotes() {
+    try {
+      const raw = localStorage.getItem(storageKey());
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) { return {}; }
+  }
+
+  function saveVotes(votes) {
+    localStorage.setItem(storageKey(), JSON.stringify(votes));
+  }
+
+  function pairCount() {
+    return (window.CW_PAIRS || []).length;
+  }
+
+  function currentPair() {
+    return window.CW_PAIRS[idx];
+  }
+
+  function render() {
+    const pairs = window.CW_PAIRS || [];
+    if (!pairs.length) {
+      document.getElementById("status").textContent = "No pairs loaded.";
+      document.getElementById("status").classList.add("error");
+      return;
+    }
+    const p = pairs[idx];
+    document.getElementById("leftText").textContent = p.left || "";
+    document.getElementById("rightText").textContent = p.right || "";
+    document.getElementById("pairMeta").textContent = "Pair " + p.pair_id + " of " + pairs.length + " · task_id " + p.task_id;
+    const votes = loadVotes();
+    const c = votes[String(p.pair_id)];
+    const pct = ((idx + 1) / pairs.length) * 100;
+    document.getElementById("progBar").style.width = pct + "%";
+    const done = Object.keys(votes).length;
+    document.getElementById("progText").textContent = "Progress: " + done + " / " + pairs.length + " voted (this rater)";
+    const st = document.getElementById("status");
+    st.classList.remove("error");
+    const btnL = document.getElementById("btnLeft");
+    const btnR = document.getElementById("btnRight");
+    const btnS = document.getElementById("btnSimilar");
+    const leftPanel = document.getElementById("leftPanel");
+    const rightPanel = document.getElementById("rightPanel");
+    const panelRow = document.getElementById("panelRow");
+    btnL.classList.remove("selected");
+    btnR.classList.remove("selected");
+    btnS.classList.remove("selected");
+    leftPanel.classList.remove("panel-chosen-a");
+    rightPanel.classList.remove("panel-chosen-b");
+    panelRow.classList.remove("similar-picked");
+    btnL.setAttribute("aria-pressed", "false");
+    btnR.setAttribute("aria-pressed", "false");
+    btnS.setAttribute("aria-pressed", "false");
+    if (c === 1) {
+      st.textContent = "Your vote: A (left) is better.";
+      btnL.classList.add("selected");
+      btnL.setAttribute("aria-pressed", "true");
+      leftPanel.classList.add("panel-chosen-a");
+      btnL.textContent = "✓  A is better  (your choice)";
+      btnR.textContent = "B is better";
+      btnS.textContent = "Similarly coherent";
+    } else if (c === 2) {
+      st.textContent = "Your vote: B (right) is better.";
+      btnR.classList.add("selected");
+      btnR.setAttribute("aria-pressed", "true");
+      rightPanel.classList.add("panel-chosen-b");
+      btnR.textContent = "✓  B is better  (your choice)";
+      btnL.textContent = "A is better";
+      btnS.textContent = "Similarly coherent";
+    } else if (c === 3) {
+      st.textContent = "Your vote: similarly coherent (about the same quality).";
+      btnS.classList.add("selected");
+      btnS.setAttribute("aria-pressed", "true");
+      panelRow.classList.add("similar-picked");
+      btnL.textContent = "A is better";
+      btnR.textContent = "B is better";
+      btnS.textContent = "✓  Similarly coherent  (your choice)";
+    } else {
+      st.textContent = "Choose A, B, or Similarly coherent.";
+      btnL.textContent = "A is better";
+      btnR.textContent = "B is better";
+      btnS.textContent = "Similarly coherent";
+    }
+  }
+
+  function setVote(choice) {
+    const p = currentPair();
+    if (!p) return;
+    const votes = loadVotes();
+    votes[String(p.pair_id)] = choice;
+    saveVotes(votes);
+    render();
+  }
+
+  function clearVote() {
+    const p = currentPair();
+    if (!p) return;
+    const votes = loadVotes();
+    delete votes[String(p.pair_id)];
+    saveVotes(votes);
+    render();
+  }
+
+  function exportJson() {
+    const votes = loadVotes();
+    const rater = document.getElementById("raterId").value;
+    const payload = {
+      format: "cw_pairwise_export_v2",
+      rater_id: parseInt(rater, 10),
+      votes: votes,
+      vote_legend: { "1": "left better", "2": "right better", "3": "similarly coherent" }
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "rater_" + rater + "_votes.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  document.getElementById("raterId").addEventListener("change", () => { idx = 0; render(); });
+  document.getElementById("btnLeft").addEventListener("click", () => setVote(1));
+  document.getElementById("btnRight").addEventListener("click", () => setVote(2));
+  document.getElementById("btnSimilar").addEventListener("click", () => setVote(3));
+  document.getElementById("btnClear").addEventListener("click", clearVote);
+  document.getElementById("btnPrev").addEventListener("click", () => {
+    idx = Math.max(0, idx - 1);
+    render();
+  });
+  document.getElementById("btnNext").addEventListener("click", () => {
+    idx = Math.min(pairCount() - 1, idx + 1);
+    render();
+  });
+  document.getElementById("btnFirstMissing").addEventListener("click", () => {
+    const votes = loadVotes();
+    const pairs = window.CW_PAIRS || [];
+    for (let i = 0; i < pairs.length; i++) {
+      if (votes[String(pairs[i].pair_id)] === undefined) {
+        idx = i;
+        render();
+        return;
+      }
+    }
+    document.getElementById("status").textContent = "All pairs have a vote.";
+  });
+  document.getElementById("btnExport").addEventListener("click", exportJson);
+  document.getElementById("btnSave").addEventListener("click", () => {
+    alert("Votes auto-save in this browser. Use Export to share your file with the organizer.");
+  });
+  document.getElementById("importFile").addEventListener("change", (ev) => {
+    const f = ev.target.files[0];
+    if (!f) return;
+    const r = new FileReader();
+    r.onload = () => {
+      try {
+        const data = JSON.parse(r.result);
+        const votes = data.votes || data;
+        if (typeof votes !== "object") throw new Error("bad format");
+        localStorage.setItem(storageKey(), JSON.stringify(votes));
+        if (data.rater_id) document.getElementById("raterId").value = String(data.rater_id);
+        render();
+      } catch (e) {
+        alert("Import failed: " + e.message);
+      }
+    };
+    r.readAsText(f);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "1") setVote(1);
+    if (e.key === "2") setVote(2);
+    if (e.key === "3") setVote(3);
+  });
+
+  render();
+})();
+  </script>
+</body>
+</html>

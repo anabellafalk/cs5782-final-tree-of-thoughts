@@ -1,0 +1,282 @@
+[
+  {
+    "pair_id": 1,
+    "task_id": 19,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "The old photograph lay dust-covered in a forgotten album, a poignant reminder of happier days gone by.",
+      "The old bookstore, with its musty smell and creaking floorboards, felt like a sanctuary in a turbulent world.",
+      "With each brush stroke, he breathed life into the canvas, transforming blank space into a vivid world of color.",
+      "After years of searching for the perfect recipe, she finally discovered that the secret ingredient was a dash of love."
+    ]
+  },
+  {
+    "pair_id": 2,
+    "task_id": 5,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "The children burst into laughter as the puppy clumsily chased its own tail for the umpteenth time.",
+      "The discovery of the ancient ruins sparked a newfound curiosity, igniting a passion for history that would last a lifetime.",
+      "With a final breath of relief, she closed the book, knowing she had found the answers she had been seeking all along.",
+      "Yet, no matter how far she traveled, home remained a distant memory aching in her heart."
+    ]
+  },
+  {
+    "pair_id": 3,
+    "task_id": 14,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "The cake was delicious, but it was the laughter shared around the table that made the evening truly unforgettable.",
+      "As the last leaves of autumn trembled in the breeze, winter's chill began to settle in.",
+      "As the clock struck midnight, an eerie calm enveloped the town, ushering in the kind of silence that only the dead of night can bring.",
+      "The aroma of freshly brewed coffee filled the air, promising comfort and warmth on a chilly winter morning."
+    ]
+  },
+  {
+    "pair_id": 4,
+    "task_id": 4,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "Even the simplest melodies can carry the weight of a thousand emotions, resonating deep within the soul.",
+      "As the last notes of the symphony faded into the air, the audience erupted into heartfelt applause, lost in the moment.",
+      "He took a deep breath, savoring the crisp autumn air, grateful for the beauty surrounding him.",
+      "While the technology promised endless possibilities, it came with a price that society was not yet prepared to pay."
+    ]
+  },
+  {
+    "pair_id": 5,
+    "task_id": 9,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "The laughter of children filled the air, a sweet melody that danced among the trees like a gentle breeze.",
+      "The sun dipped below the horizon, casting a warm glow that signaled the end of another day.",
+      "In that fleeting moment, everything seemed possible, and hope ignited like a spark in the darkness.",
+      "With a final flourish, the chef presented his masterpiece, a dazzling array of colors and textures that promised to delight the senses."
+    ]
+  },
+  {
+    "pair_id": 6,
+    "task_id": 13,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "After years of quiet dedication, she finally held the trophy aloft, a testament to her unwavering resolve.",
+      "The clock struck midnight, and with it came a renewed sense of possibility, wrapping around her like a warm blanket.",
+      "The discovery of a new planet sparked debates among scientists about the possibility of extraterrestrial life.",
+      "With a final flourish, the artist stepped back, allowing his canvas to breathe in the brilliance of his imagination."
+    ]
+  },
+  {
+    "pair_id": 7,
+    "task_id": 15,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "With a heavy heart, she packed away the memories, knowing some chapters are meant to close.",
+      "The final whistle blew, and the stadium erupted, a cacophony of cheers and chants celebrating a season well played.",
+      "As the clock struck midnight, the fireworks exploded in a dazzling array of colors above the cityscape.",
+      "The sun dipped below the horizon, casting a golden glow over the tranquil waters."
+    ]
+  },
+  {
+    "pair_id": 8,
+    "task_id": 18,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "With a final flourish, she closed the book, content to let the story linger in her mind like a sweet melody.",
+      "She smiled, knowing that sometimes the smallest gestures could have the biggest impact.",
+      "As the final notes of the symphony lingered in the air, the audience erupted into applause.",
+      "The last puzzle piece clicked into place, revealing a picture she had never expected to see."
+    ]
+  },
+  {
+    "pair_id": 9,
+    "task_id": 6,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "Despite the odds stacked against him, he smiled, knowing that every ending was simply a new beginning.",
+      "Beneath the surface of the tranquil lake lay a bustling ecosystem, teeming with life and secrets.",
+      "The unexpected rain shower was a welcome reprieve from the relentless heat, refreshing the world and washing away the dust of summer.",
+      "The old, dusty book had been forgotten for decades, but as she opened it, a world of adventure unfolded before her eyes."
+    ]
+  },
+  {
+    "pair_id": 10,
+    "task_id": 12,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "With a final flourish, she closed the book, satisfied that she had unraveled the mystery at last.",
+      "The old clock ticked steadily on the wall, a stubborn reminder that time waits for no one.",
+      "In that moment of clarity, he realized that the pursuit of happiness often lies within.",
+      "He realized then that this was not just a decision but a leap of faith he had been avoiding for far too long."
+    ]
+  },
+  {
+    "pair_id": 11,
+    "task_id": 17,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "In the midst of uncertainty, laughter became their refuge from the storm.",
+      "The artist\u2019s brush danced across the canvas, bringing the vibrant landscape to life before the viewer\u2019s eyes.",
+      "The book lay untouched on the shelf, a testament to the countless stories waiting to be discovered by a curious mind.",
+      "In a surprising twist of fate, he discovered that the key to happiness had always resided within him, waiting to be unlocked."
+    ]
+  },
+  {
+    "pair_id": 12,
+    "task_id": 10,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "In that moment of silence, she understood the true weight of her choices, each one a thread woven into the fabric of her life.",
+      "As the final whistle blew, the crowd erupted in cheers, celebrating a victory that had seemed impossible just moments before.",
+      "As the sun dipped below the horizon, the vibrant colors painted the sky, signaling the end of another beautiful day.",
+      "The sun dipped below the horizon, casting a golden hue over the quiet town, signaling the end of another day."
+    ]
+  },
+  {
+    "pair_id": 13,
+    "task_id": 1,
+    "left_method": "cot",
+    "right_method": "tot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "As the clock struck midnight, a hush fell over the city, its inhabitants lost in dreams while the world outside continued to spin.",
+      "In the end, all that mattered was the time spent together, not the grand adventures they had dreamed of.",
+      "As the sun dipped below the horizon, the sky erupted into a riot of colors, signaling the end of another perfect day.",
+      "In that moment, he realized that sometimes the smallest decisions lead to the biggest adventures."
+    ]
+  },
+  {
+    "pair_id": 14,
+    "task_id": 11,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "With one final breath, he knew he had given everything he could, and that was enough.",
+      "The ancient oak tree, with its gnarled branches and twisted roots, stood as a silent witness to the passage of time, harboring countless secrets within its bark.",
+      "As the sun dipped below the horizon, painting the sky in hues of orange and purple, she took a deep breath, finally ready to embrace the change that awaited her.",
+      "Regardless of her reservations, she stepped onto the stage, ready to face whatever lay ahead."
+    ]
+  },
+  {
+    "pair_id": 15,
+    "task_id": 2,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "As he took his last sip of coffee, he understood that change was not something to fear, but to embrace wholeheartedly.",
+      "She knew that was the last chance to change her mind, and yet, the decision felt as heavy as stone.",
+      "It was in the quiet moments of solitude that she discovered her true passions and dared to dream beyond her fears.",
+      "Even in the quietest moments, the sound of her heartbeat was a reassuring reminder that she was alive and breathing."
+    ]
+  },
+  {
+    "pair_id": 16,
+    "task_id": 16,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "The sun dipped below the horizon, casting a warm glow over the quiet town as night began to whisper its secrets.",
+      "She wondered if the old house still whispered its secrets to the wind, holding onto the memories of laughter and tears within its walls.",
+      "The presentation concluded with a round of applause, signaling not just the end, but a new beginning.",
+      "The sun dipped below the horizon, casting a warm golden hue across the turbulent waters."
+    ]
+  },
+  {
+    "pair_id": 17,
+    "task_id": 7,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "In that split second, he realized that change was inevitable, and it was time to embrace it fully.",
+      "With a final flourish, she closed the book, already yearning for the adventure that awaited her in the next chapter.",
+      "Sometimes, silence spoke louder than words ever could, offering a space for reflection that was profoundly necessary.",
+      "In that moment, he realized that sometimes the hardest decisions were the ones that shaped us the most."
+    ]
+  },
+  {
+    "pair_id": 18,
+    "task_id": 8,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "Her laughter echoed through the empty halls, a reminder that joy can thrive even in the quietest of places.",
+      "In the grand tapestry of life, every thread, no matter how small, played a crucial role.",
+      "After the storm, the world felt fresh and new, as if nature had hit the reset button.",
+      "In that moment of clarity, he realized that happiness was a choice, and he was ready to embrace it wholeheartedly."
+    ]
+  },
+  {
+    "pair_id": 19,
+    "task_id": 0,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "With a heavy heart, she closed the door behind her, symbolizing the end of an era and the beginning of something new.",
+      "As the curtain fell, the audience erupted into applause, their enthusiasm echoing through the theater.",
+      "The stars twinkled above like distant diamonds, each one holding a mystery of its own in the vast expanse of the night.",
+      "She found solace in the most unexpected places, beneath the old oak tree where time seemed to stand still."
+    ]
+  },
+  {
+    "pair_id": 20,
+    "task_id": 3,
+    "left_method": "tot",
+    "right_method": "cot",
+    "method_a": "tot",
+    "method_b": "cot",
+    "sentences": [
+      "She closed her eyes and breathed in deeply, the scent of freshly brewed coffee weaving through her senses like a warm embrace.",
+      "Just as the final notes faded away, a ripple of applause surged through the crowd, echoing their appreciation for the performance.",
+      "Even after all these years, the old bookstore still held the scent of nostalgia and whispered secrets.",
+      "Even in the quietest moments, the city pulsed with an energy that was impossible to ignore."
+    ]
+  }
+]
