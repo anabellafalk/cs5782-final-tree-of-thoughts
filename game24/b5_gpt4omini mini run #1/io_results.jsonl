@@ -1,3 +1,0 @@
-{"method": "io", "input": "4 5 6 10", "answer": "To obtain 24 using the numbers 4, 5, 6, and 10, you can use the following arithmetic operations:", "success": 0, "puzzle_idx": 900}
-{"method": "io", "input": "1 2 4 7", "answer": "To obtain 24 using the numbers 1, 2, 4, and 7, you can use the following arithmetic operations:", "success": 0, "puzzle_idx": 901}
-{"method": "io", "input": "2 5 8 11", "answer": "To obtain 24 using the numbers 2, 5, 8, and 11 with basic arithmetic operations, we can follow these steps:", "success": 0, "puzzle_idx": 902}
