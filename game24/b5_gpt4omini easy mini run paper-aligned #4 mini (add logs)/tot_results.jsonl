@@ -1,0 +1,1 @@
+{"method": "tot", "input": "1 1 4 6", "answer": "((1 + 1) + 4) / 6 = 24", "n_kept": 5, "any_success": 0, "success": 0, "trace": "1 + 1 = 2 (left: 2 4 6)  \n2 + 4 = 6 (left: 6 6)  \n6 / 6 = 1 (left: 1)\nAnswer: ((1 + 1) + 4) / 6 = 24\n", "puzzle_idx": 0}

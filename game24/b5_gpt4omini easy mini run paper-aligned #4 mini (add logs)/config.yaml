@@ -1,0 +1,25 @@
+cache_dir: ./.llm_cache
+cost_log: ./results/game24/cost_log.jsonl
+data_path: ./data/game24/24.csv
+end_idx: 100
+experiment_name: 'b5_gpt4omini easy mini run paper-aligned #4 mini (add logs)'
+log_level: INFO
+methods:
+- enabled: true
+  n_samples: 1
+  name: io
+- enabled: true
+  n_samples: 1
+  name: cot
+- enabled: false
+  n_samples: 100
+  name: cot_sc
+- breadth: 5
+  enabled: true
+  n_eval: 3
+  n_propose: 1
+  name: tot
+model: gpt-4o-mini
+results_dir: ./results/game24
+start_idx: 0
+task: game24
