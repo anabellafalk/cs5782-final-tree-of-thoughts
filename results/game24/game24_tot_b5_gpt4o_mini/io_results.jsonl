@@ -1,0 +1,5 @@
+{"method": "io", "input": "4 5 6 10", "answer": "(10 - 6) * (5 + 4) = 24", "success": 0, "puzzle_idx": 900}
+{"method": "io", "input": "1 2 4 7", "answer": "(7 - 1) * (4 - 2) = 24", "success": 0, "puzzle_idx": 901}
+{"method": "io", "input": "2 5 8 11", "answer": "(11 - 5) * (8 - 2) = 24", "success": 0, "puzzle_idx": 902}
+{"method": "io", "input": "3 4 4 13", "answer": "(13 - 4) * (4 - 3) = 24", "success": 0, "puzzle_idx": 903}
+{"method": "io", "input": "6 7 8 9", "answer": "(9 - 7) * (8 + 6) = 24", "success": 0, "puzzle_idx": 904}

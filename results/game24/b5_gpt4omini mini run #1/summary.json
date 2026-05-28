@@ -1,0 +1,17 @@
+{
+  "io": {
+    "success_rate": 0.0,
+    "n_puzzles": 3,
+    "elapsed_sec": 5.710815191268921
+  },
+  "cot": {
+    "success_rate": 0.0,
+    "n_puzzles": 3,
+    "elapsed_sec": 20.29856777191162
+  },
+  "tot": {
+    "success_rate": 0.0,
+    "n_puzzles": 3,
+    "elapsed_sec": 344.10215997695923
+  }
+}

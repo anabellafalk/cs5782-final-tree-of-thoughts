@@ -1,0 +1,10 @@
+{"method": "io", "input": "1 1 4 6", "answer": "(6 - 1) * (4 - 1) = 24", "success": 0, "puzzle_idx": 0}
+{"method": "io", "input": "1 1 11 11", "answer": "(11 - 1) * (11 - 1) = 24", "success": 0, "puzzle_idx": 1}
+{"method": "io", "input": "1 1 3 8", "answer": "(3 - 1) * (8 + 1) = 24", "success": 0, "puzzle_idx": 2}
+{"method": "io", "input": "1 1 1 8", "answer": "(1 + 1 + 1) * 8 = 24", "success": 1, "puzzle_idx": 3}
+{"method": "io", "input": "6 6 6 6", "answer": "(6 / 6 + 6) * 6 = 24", "success": 0, "puzzle_idx": 4}
+{"method": "io", "input": "1 1 2 12", "answer": "(12 * 2) + (1 + 1) = 24", "success": 0, "puzzle_idx": 5}
+{"method": "io", "input": "1 2 2 6", "answer": "(6 / 2) * (2 + 1) = 24", "success": 0, "puzzle_idx": 6}
+{"method": "io", "input": "1 1 10 12", "answer": "(10 - 1) * (12 - 1) = 24", "success": 0, "puzzle_idx": 7}
+{"method": "io", "input": "2 2 10 10", "answer": "(10 - 2) * (10 - 2) = 24", "success": 0, "puzzle_idx": 8}
+{"method": "io", "input": "1 1 1 12", "answer": "(12 - 1 - 1) * 1 = 24", "success": 0, "puzzle_idx": 9}
