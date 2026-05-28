@@ -1,0 +1,18 @@
+[
+  {
+    "id": "easy_word_square_1",
+    "size": 5,
+    "slots": [
+      {"id": "h1", "direction": "across", "row": 0, "col": 0, "length": 5, "clue": "The organ that pumps blood", "answer": "HEART"},
+      {"id": "h2", "direction": "across", "row": 1, "col": 0, "length": 5, "clue": "A glowing piece of coal or wood", "answer": "EMBER"},
+      {"id": "h3", "direction": "across", "row": 2, "col": 0, "length": 5, "clue": "To mistreat or use wrongly", "answer": "ABUSE"},
+      {"id": "h4", "direction": "across", "row": 3, "col": 0, "length": 5, "clue": "A sticky substance from trees", "answer": "RESIN"},
+      {"id": "h5", "direction": "across", "row": 4, "col": 0, "length": 5, "clue": "A general direction or pattern", "answer": "TREND"},
+      {"id": "v1", "direction": "down", "row": 0, "col": 0, "length": 5, "clue": "The organ that pumps blood", "answer": "HEART"},
+      {"id": "v2", "direction": "down", "row": 0, "col": 1, "length": 5, "clue": "A glowing piece of coal or wood", "answer": "EMBER"},
+      {"id": "v3", "direction": "down", "row": 0, "col": 2, "length": 5, "clue": "To mistreat or use wrongly", "answer": "ABUSE"},
+      {"id": "v4", "direction": "down", "row": 0, "col": 3, "length": 5, "clue": "A sticky substance from trees", "answer": "RESIN"},
+      {"id": "v5", "direction": "down", "row": 0, "col": 4, "length": 5, "clue": "A general direction or pattern", "answer": "TREND"}
+    ]
+  }
+]

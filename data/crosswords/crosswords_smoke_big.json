@@ -1,0 +1,50 @@
+[
+  {
+    "id": "toy_word_square_1",
+    "size": 5,
+    "slots": [
+      {"id": "h1", "direction": "across", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write SATOR", "answer": "SATOR"},
+      {"id": "h2", "direction": "across", "row": 1, "col": 0, "length": 5, "clue": "For this smoke test, write AREPO", "answer": "AREPO"},
+      {"id": "h3", "direction": "across", "row": 2, "col": 0, "length": 5, "clue": "For this smoke test, write TENET", "answer": "TENET"},
+      {"id": "h4", "direction": "across", "row": 3, "col": 0, "length": 5, "clue": "For this smoke test, write OPERA", "answer": "OPERA"},
+      {"id": "h5", "direction": "across", "row": 4, "col": 0, "length": 5, "clue": "For this smoke test, write ROTAS", "answer": "ROTAS"},
+      {"id": "v1", "direction": "down", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write SATOR", "answer": "SATOR"},
+      {"id": "v2", "direction": "down", "row": 0, "col": 1, "length": 5, "clue": "For this smoke test, write AREPO", "answer": "AREPO"},
+      {"id": "v3", "direction": "down", "row": 0, "col": 2, "length": 5, "clue": "For this smoke test, write TENET", "answer": "TENET"},
+      {"id": "v4", "direction": "down", "row": 0, "col": 3, "length": 5, "clue": "For this smoke test, write OPERA", "answer": "OPERA"},
+      {"id": "v5", "direction": "down", "row": 0, "col": 4, "length": 5, "clue": "For this smoke test, write ROTAS", "answer": "ROTAS"}
+    ]
+  },
+  {
+    "id": "toy_word_square_2",
+    "size": 5,
+    "slots": [
+      {"id": "h1", "direction": "across", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write HEART", "answer": "HEART"},
+      {"id": "h2", "direction": "across", "row": 1, "col": 0, "length": 5, "clue": "For this smoke test, write EMBER", "answer": "EMBER"},
+      {"id": "h3", "direction": "across", "row": 2, "col": 0, "length": 5, "clue": "For this smoke test, write ABUSE", "answer": "ABUSE"},
+      {"id": "h4", "direction": "across", "row": 3, "col": 0, "length": 5, "clue": "For this smoke test, write RESIN", "answer": "RESIN"},
+      {"id": "h5", "direction": "across", "row": 4, "col": 0, "length": 5, "clue": "For this smoke test, write TREND", "answer": "TREND"},
+      {"id": "v1", "direction": "down", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write HEART", "answer": "HEART"},
+      {"id": "v2", "direction": "down", "row": 0, "col": 1, "length": 5, "clue": "For this smoke test, write EMBER", "answer": "EMBER"},
+      {"id": "v3", "direction": "down", "row": 0, "col": 2, "length": 5, "clue": "For this smoke test, write ABUSE", "answer": "ABUSE"},
+      {"id": "v4", "direction": "down", "row": 0, "col": 3, "length": 5, "clue": "For this smoke test, write RESIN", "answer": "RESIN"},
+      {"id": "v5", "direction": "down", "row": 0, "col": 4, "length": 5, "clue": "For this smoke test, write TREND", "answer": "TREND"}
+    ]
+  },
+  {
+    "id": "toy_word_square_3",
+    "size": 5,
+    "slots": [
+      {"id": "h1", "direction": "across", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write ABCDE", "answer": "ABCDE"},
+      {"id": "h2", "direction": "across", "row": 1, "col": 0, "length": 5, "clue": "For this smoke test, write FGHIK", "answer": "FGHIK"},
+      {"id": "h3", "direction": "across", "row": 2, "col": 0, "length": 5, "clue": "For this smoke test, write LMNOP", "answer": "LMNOP"},
+      {"id": "h4", "direction": "across", "row": 3, "col": 0, "length": 5, "clue": "For this smoke test, write QRSTU", "answer": "QRSTU"},
+      {"id": "h5", "direction": "across", "row": 4, "col": 0, "length": 5, "clue": "For this smoke test, write VWXYZ", "answer": "VWXYZ"},
+      {"id": "v1", "direction": "down", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write AFLQV", "answer": "AFLQV"},
+      {"id": "v2", "direction": "down", "row": 0, "col": 1, "length": 5, "clue": "For this smoke test, write BGMRW", "answer": "BGMRW"},
+      {"id": "v3", "direction": "down", "row": 0, "col": 2, "length": 5, "clue": "For this smoke test, write CHNSX", "answer": "CHNSX"},
+      {"id": "v4", "direction": "down", "row": 0, "col": 3, "length": 5, "clue": "For this smoke test, write DIOTY", "answer": "DIOTY"},
+      {"id": "v5", "direction": "down", "row": 0, "col": 4, "length": 5, "clue": "For this smoke test, write EKPUZ", "answer": "EKPUZ"}
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "easy_common_001",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["The organ that pumps blood", "A glowing piece of coal or wood", "To mistreat or use wrongly", "A sticky substance from trees", "A general direction or pattern"],
+    "down_clues": ["The organ that pumps blood", "A glowing piece of coal or wood", "To mistreat or use wrongly", "A sticky substance from trees", "A general direction or pattern"]
+  },
+  {
+    "id": "easy_common_002",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Body part that beats in the chest", "A hot glowing coal", "To treat someone badly", "Tree sap used in varnish", "A popular direction of change"],
+    "down_clues": ["Body part that beats in the chest", "A hot glowing coal", "To treat someone badly", "Tree sap used in varnish", "A popular direction of change"]
+  },
+  {
+    "id": "easy_common_003",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Symbol of love; blood-pumping organ", "Small live coal in a fire", "To misuse or harm", "Sticky tree material", "Fashion or tendency"],
+    "down_clues": ["Symbol of love; blood-pumping organ", "Small live coal in a fire", "To misuse or harm", "Sticky tree material", "Fashion or tendency"]
+  },
+  {
+    "id": "easy_common_004",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Central organ of circulation", "Glowing remnant of a fire", "Cruel or improper treatment", "Pine sap, for example", "Current style or movement"],
+    "down_clues": ["Central organ of circulation", "Glowing remnant of a fire", "Cruel or improper treatment", "Pine sap, for example", "Current style or movement"]
+  },
+  {
+    "id": "easy_common_005",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["It pumps blood through the body", "A glowing coal or wood fragment", "To use in a harmful way", "Sticky plant secretion", "A prevailing tendency"],
+    "down_clues": ["It pumps blood through the body", "A glowing coal or wood fragment", "To use in a harmful way", "Sticky plant secretion", "A prevailing tendency"]
+  },
+  {
+    "id": "easy_common_006",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Card suit with a valentine shape", "Live coal left after a flame", "Mistreatment", "Material from tree sap", "General course of events"],
+    "down_clues": ["Card suit with a valentine shape", "Live coal left after a flame", "Mistreatment", "Material from tree sap", "General course of events"]
+  },
+  {
+    "id": "easy_common_007",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ associated with pulse", "Glowing bit in a campfire", "To hurt by misuse", "Clear sticky coating ingredient", "What is popular now"],
+    "down_clues": ["Organ associated with pulse", "Glowing bit in a campfire", "To hurt by misuse", "Clear sticky coating ingredient", "What is popular now"]
+  },
+  {
+    "id": "easy_common_008",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Love symbol and body organ", "Hot coal in ashes", "To treat cruelly", "Sap-like sticky material", "A direction in data over time"],
+    "down_clues": ["Love symbol and body organ", "Hot coal in ashes", "To treat cruelly", "Sap-like sticky material", "A direction in data over time"]
+  },
+  {
+    "id": "easy_common_009",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Blood-moving organ", "Glowing piece after a fire burns down", "Bad treatment", "Sticky substance from pine", "Pattern of change"],
+    "down_clues": ["Blood-moving organ", "Glowing piece after a fire burns down", "Bad treatment", "Sticky substance from pine", "Pattern of change"]
+  },
+  {
+    "id": "easy_common_010",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Chest organ", "Glowing coal", "Harmful misuse", "Tree gum", "Popular pattern"],
+    "down_clues": ["Chest organ", "Glowing coal", "Harmful misuse", "Tree gum", "Popular pattern"]
+  },
+  {
+    "id": "easy_common_011",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Where a heartbeat comes from", "A coal that still glows", "To use wrongly", "Sticky tree product", "Long-term direction"],
+    "down_clues": ["Where a heartbeat comes from", "A coal that still glows", "To use wrongly", "Sticky tree product", "Long-term direction"]
+  },
+  {
+    "id": "easy_common_012",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ checked by a cardiologist", "Glowing remains of burning wood", "To mistreat", "Sticky coating material", "Fashion movement"],
+    "down_clues": ["Organ checked by a cardiologist", "Glowing remains of burning wood", "To mistreat", "Sticky coating material", "Fashion movement"]
+  },
+  {
+    "id": "easy_common_013",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ that circulates blood", "Fireplace glow", "Improper use or treatment", "Pine product", "General tendency"],
+    "down_clues": ["Organ that circulates blood", "Fireplace glow", "Improper use or treatment", "Pine product", "General tendency"]
+  },
+  {
+    "id": "easy_common_014",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["It has chambers and valves", "Burning coal fragment", "To treat badly", "Sticky natural substance", "Observable pattern"],
+    "down_clues": ["It has chambers and valves", "Burning coal fragment", "To treat badly", "Sticky natural substance", "Observable pattern"]
+  },
+  {
+    "id": "easy_common_015",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Part of the body with a beat", "Small glowing fire remnant", "To handle cruelly or wrongly", "Sap hardened into a sticky solid", "A movement or tendency"],
+    "down_clues": ["Part of the body with a beat", "Small glowing fire remnant", "To handle cruelly or wrongly", "Sap hardened into a sticky solid", "A movement or tendency"]
+  },
+  {
+    "id": "easy_common_016",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["The body's blood pump", "Glowing coal in ashes", "To misuse someone or something", "Sticky plant material", "Current tendency"],
+    "down_clues": ["The body's blood pump", "Glowing coal in ashes", "To misuse someone or something", "Sticky plant material", "Current tendency"]
+  },
+  {
+    "id": "easy_common_017",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ represented by a red symbol", "Hot leftover from a fire", "To harm through bad treatment", "Varnish ingredient from trees", "Direction something is heading"],
+    "down_clues": ["Organ represented by a red symbol", "Hot leftover from a fire", "To harm through bad treatment", "Varnish ingredient from trees", "Direction something is heading"]
+  },
+  {
+    "id": "easy_common_018",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ with a steady beat", "Glowing bit of burned wood", "Cruel treatment", "Sticky tree secretion", "Popular tendency"],
+    "down_clues": ["Organ with a steady beat", "Glowing bit of burned wood", "Cruel treatment", "Sticky tree secretion", "Popular tendency"]
+  },
+  {
+    "id": "easy_common_019",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Organ that beats in the chest", "Coal glowing red", "To treat in a harmful way", "Sticky tree sap", "General direction"],
+    "down_clues": ["Organ that beats in the chest", "Coal glowing red", "To treat in a harmful way", "Sticky tree sap", "General direction"]
+  },
+  {
+    "id": "easy_common_020",
+    "rows": ["HEART", "EMBER", "ABUSE", "RESIN", "TREND"],
+    "across_clues": ["Body's pump", "Live coal", "Bad treatment or misuse", "Sticky substance from plants", "Pattern or tendency"],
+    "down_clues": ["Body's pump", "Live coal", "Bad treatment or misuse", "Sticky substance from plants", "Pattern or tendency"]
+  }
+]

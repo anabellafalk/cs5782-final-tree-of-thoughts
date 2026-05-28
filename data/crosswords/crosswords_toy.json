@@ -1,0 +1,18 @@
+[
+  {
+    "id": "toy_word_square_1",
+    "size": 5,
+    "slots": [
+      {"id": "h1", "direction": "across", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write SATOR", "answer": "SATOR"},
+      {"id": "h2", "direction": "across", "row": 1, "col": 0, "length": 5, "clue": "For this smoke test, write AREPO", "answer": "AREPO"},
+      {"id": "h3", "direction": "across", "row": 2, "col": 0, "length": 5, "clue": "For this smoke test, write TENET", "answer": "TENET"},
+      {"id": "h4", "direction": "across", "row": 3, "col": 0, "length": 5, "clue": "For this smoke test, write OPERA", "answer": "OPERA"},
+      {"id": "h5", "direction": "across", "row": 4, "col": 0, "length": 5, "clue": "For this smoke test, write ROTAS", "answer": "ROTAS"},
+      {"id": "v1", "direction": "down", "row": 0, "col": 0, "length": 5, "clue": "For this smoke test, write SATOR", "answer": "SATOR"},
+      {"id": "v2", "direction": "down", "row": 0, "col": 1, "length": 5, "clue": "For this smoke test, write AREPO", "answer": "AREPO"},
+      {"id": "v3", "direction": "down", "row": 0, "col": 2, "length": 5, "clue": "For this smoke test, write TENET", "answer": "TENET"},
+      {"id": "v4", "direction": "down", "row": 0, "col": 3, "length": 5, "clue": "For this smoke test, write OPERA", "answer": "OPERA"},
+      {"id": "v5", "direction": "down", "row": 0, "col": 4, "length": 5, "clue": "For this smoke test, write ROTAS", "answer": "ROTAS"}
+    ]
+  }
+]

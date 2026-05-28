@@ -1,0 +1,44 @@
+# Game of 24 main ToT experiment config.
+# Reproduces Table 2 of Yao et al. 2023.
+#
+# Uses OpenAI gpt-4o-mini by default. Set OPENAI_API_KEY in your environment
+# or .env file before running model-backed experiments.
+#
+# To run:
+#   python code/scripts/run_game24.py --config configs/game24_tot.yaml
+
+experiment_name: "game24_tot_b5_gpt4o_mini"
+task: "game24"
+
+# Model settings
+model: "gpt-4o-mini"
+cache_dir: "./.llm_cache"
+cost_log: "./results/game24/cost_log.jsonl"
+
+# Dataset
+data_path: "./data/game24/24.csv"
+# The paper evaluates on indices 900-999 (the "hard" subset where humans
+# have lower success rates). Using the same range keeps numbers comparable.
+start_idx: 900
+end_idx: 1000
+
+# Methods to run
+methods:
+  - name: "io"            # Direct input-output baseline
+    enabled: true
+    n_samples: 1
+  - name: "cot"           # Chain-of-thought baseline
+    enabled: true
+    n_samples: 1
+  - name: "cot_sc"        # CoT with self-consistency, k=100
+    enabled: false        # Expensive; enable only for headline runs
+    n_samples: 100
+  - name: "tot"           # Tree-of-Thought (the main method)
+    enabled: true
+    breadth: 5            # b in the paper
+    n_propose: 1          # Number of proposal calls per state
+    n_eval: 3             # Number of value samples per state
+
+# Output
+results_dir: "./results/game24"
+log_level: "INFO"
